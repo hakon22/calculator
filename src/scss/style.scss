@@ -1,0 +1,36 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.bi-plus-circle,
+.bi-check-circle {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+.bi-check-circle {
+  color: green;
+}
+
+.list-group-item-action.active {
+  background-color: #cfeaf0;
+  color: #212529;
+}
+
+#calculation {
+  transform-origin: left top;
+  transform: scaleX(0);
+
+  &.open {
+    transform: scaleX(1);
+    transition: 0.5s;
+  }
+
+  &.close {
+    transition: 0.5s;
+  }
+
+  .card-body .card-title.old-price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+}
