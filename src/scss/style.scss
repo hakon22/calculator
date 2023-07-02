@@ -17,11 +17,14 @@
 }
 
 #calculation {
+  position: absolute;
+  top: -250px;
+  z-index: -1;
   transform-origin: left top;
-  transform: scaleX(0);
+  transform: scaleY(0);
 
   &.open {
-    transform: scaleX(1);
+    transform: scaleY(1) translateY(250px);
     transition: 0.5s;
   }
 
