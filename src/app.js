@@ -19,7 +19,8 @@ const checkOption = ({ target }) => {
   } else {
     button.classList.add('active');
     icon.classList.remove('bi-plus-circle');
-    icon.classList.add('bi-check-circle');
+    icon.classList.add('bi-check-circle', 'animate__heartBeat');
+    setTimeout(() => icon.classList.remove('animate__heartBeat'), 1500);
     const count = parseInt(button.querySelector('.text-muted').textContent);
     state.summ += count;
   }
